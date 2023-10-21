@@ -1,0 +1,133 @@
+/* Formulaire de connexion */
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    width: 85%;
+    max-width: 25pc;
+    height: 25pc;
+    padding: 1pc;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    flex-direction: column;
+    background-color: #113078;
+    justify-content: space-around;
+    position: absolute;
+    top: 25%
+}
+
+.mb-3 {
+    font-size: 12px;
+    color: aliceblue;
+    align-self: center;
+}
+
+.mb-3 > a{
+    color: #FCAD10;
+    text-decoration: none;
+}
+
+.form-title {
+    font-size: 20px;
+    color:aliceblue;
+    margin: 0 0 1pc;
+}
+
+hr {
+    margin: 0;
+    height: 5px;
+    width: 15pc;
+    border: none;
+    border-radius: 15px;
+    background-color: #FCAD10
+}
+
+
+.nav-connexion {
+    display: flex;
+    margin-bottom: 1pc;
+    align-self: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav-connexion > hr {
+    width: 18pc;
+}
+
+.form-group {
+    position: relative;
+    align-self: center;
+}
+
+.form-group label {
+    top: 28px;
+    left: 2pc;
+    position: absolute;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+.form-group input {
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-group input:focus ~ label,
+.form-group input:valid ~ label {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    transform: translateY(-36px) translateX(-15px);
+}
+
+.form-group label {
+    color: #9ec9ed;
+}
+
+#inputLogin,
+#inputPassword {
+    height: 20px;
+    padding: 5px;
+    color: aliceblue;
+    margin: 1pc 1pc 0 1pc;
+    border: 5px solid #3558ce;
+    background-color: #12295f;
+}
+
+.alert {
+    align-self: center;
+    color: #FCAD10;
+}
+
+.button-connection {
+    width: 12pc;
+    height: 3pc;
+    border: none;
+    font-size: 18px;
+    align-self: center;
+    border-radius: 25px;
+    background-color: #FCAD10;
+}
+
+.button-connection:hover {
+    color: #FCAD10;
+    cursor: pointer;
+    background-color: #3e81e6;
+}
+
+.no-password {
+    color: aliceblue;
+    align-self: center;
+}
+
+.no-password:hover {
+    color: #d28d50;
+    cursor: pointer;
+}
